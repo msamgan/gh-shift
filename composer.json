@@ -1,0 +1,54 @@
+{
+    "name": "msamgan/gh_shift",
+    "description": "A Laravel Zero based application to make github cli for available for multiple accounts",
+    "keywords": [
+        "framework",
+        "laravel",
+        "laravel zero",
+        "console",
+        "cli"
+    ],
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohammed Samgan Khan",
+            "email": "mohdsamgankhan@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel-zero/framework": "^10.0.2",
+        "nunomaduro/termwind": "^1.15.1"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.8",
+        "mockery/mockery": "^1.5.1",
+        "pestphp/pest": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "bin": [
+        "ghs"
+    ]
+}
