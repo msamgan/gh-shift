@@ -45,4 +45,9 @@ class Files
         fwrite($file, $jsonPayload);
         fclose($file);
     }
+
+    public function removeFile($file)
+    {
+        unlink($file);
+    }
 }
