@@ -8,8 +8,13 @@
         "console",
         "cli"
     ],
+    "homepage": "https://github.com/msamgan/gh-shift",
     "type": "project",
     "license": "MIT",
+    "support": {
+        "issues": "https://github.com/msamgan/gh-shift/issues/new",
+        "source": "https://github.com/msamgan/gh-shift",
+    },
     "authors": [
         {
             "name": "Mohammed Samgan Khan",
@@ -18,13 +23,13 @@
     ],
     "require": {
         "php": "^8.1",
-        "laravel-zero/framework": "^10.0.2",
         "nunomaduro/termwind": "^1.15.1"
     },
     "require-dev": {
         "laravel/pint": "^1.8",
         "mockery/mockery": "^1.5.1",
-        "pestphp/pest": "^2.5"
+        "pestphp/pest": "^2.5",
+        "laravel-zero/framework": "^10.0.2"
     },
     "autoload": {
         "psr-4": {
@@ -49,6 +54,6 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "bin": [
-        "ghs"
+        "builds/ghs"
     ]
 }
