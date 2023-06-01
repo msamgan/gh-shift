@@ -5,11 +5,20 @@ A simple command line tool to switch between gh (github cli) accounts.
 ## Installation
 
 ```bash
-composer global require msamgan/gh-shift
+git clone https://github.com/msamgan/gh-shift.git
+cd gh-shift
+php ghs app:build ghs
 ```
 
 ## Usage
 
 ```bash
-ghs -h
+./builds/ghs --help
 ```
+
+## Making it global
+
+```bash
+sudo mv ./builds/ghs /usr/local/bin/ghs
+```
+
